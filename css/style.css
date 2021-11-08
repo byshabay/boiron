@@ -1,6 +1,9 @@
 @import url('../css/imports.css');
-
-/* 1.COMMON STYLES START */
+/* 
+-------------------------------------------------
+COMMON STYLES START
+-------------------------------------------------
+*/
 
 * {
     margin: 0;
@@ -33,6 +36,8 @@
     --bold: 'MontserratBold';
     --text-shadow: 0px 0px 1px var(--lighter-text);
     --box-shadow: 0 0 7px 0 rgb(0 0 0 / 15%);
+    --banner-inner-shadow: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.42) 67%, rgba(0, 0, 0, 0.7));
+    --animation: all 0.3s ease-in-out;
     --text-14: calc( (100vw - 300px)/(1980 - 300) * (14 - 14) + 14px);
 
 }
@@ -65,9 +70,85 @@
     background: url('../images/link.svg') center/100% no-repeat;
 }
 
-/* 1.COMMON STYLES END */
+.common-h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
 
-/* FONTS START */
+    font-family: var(--bold);
+    font-size: 48px;
+
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+    
+    transform: translateX(-50%);
+}
+
+.common-banner {
+    width: 100%;
+    height: calc(100vw / 1.777777778);
+    max-height: 810px;
+    padding-top: 90px;
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.back-btn {
+    padding: 3px 17px;
+    display: inline-block;
+    margin-top: 12px;
+
+    border: 2px solid var(--lighter-text);
+    border-radius: 20px;
+}
+
+.back-btn img {
+    transition: var(--animation);
+}
+
+.back-btn:hover img {
+    transform: translateX(-8px);
+}
+
+/* 
+-------------------------------------------------
+COMMON STYLES END
+-------------------------------------------------
+*/
+
+/* 
+-------------------------------------------------
+PRODUCT PAGE STYLES START
+-------------------------------------------------
+*/
+
+/* 1.BANNER START */
+
+.product-banner {
+    background-image: var(--banner-inner-shadow) , url('../images/product-bkg.png');
+}
+
+/* 1.BANNER END */
+
+/* 
+-------------------------------------------------
+PRODUCT PAGE STYLES END
+-------------------------------------------------
+*/
+
+
+
+/* 
+-------------------------------------------------
+FONTS START
+-------------------------------------------------
+*/
 
 /* 1.MONTSERRAT LIGHT START */
 @font-face {
@@ -119,4 +200,8 @@
 
 /* 3.MONTSERRAT BOLD END */
 
-/* FONTS END */
+/* 
+-------------------------------------------------
+FONTS END
+-------------------------------------------------
+*/
