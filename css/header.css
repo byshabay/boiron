@@ -14,11 +14,16 @@
 }
 
 .header__top .header__top-li > a {
-    margin-right: 14px;
+    display: flex;
+    align-items: center;
 
-    font-size: var(--text-14);
+    font-size: 12px;
 
     color: #fff;
+}
+
+.header__top .header__top-li {
+    margin-right: 22px;
 }
 
 .header__top-parent {
@@ -26,16 +31,21 @@
     align-items: center;
 }
 
-.header__top-parent::after {
-    content: ' ';
-    display: block;
-    width: 6px;
-    height: 6px;
+.header__top-parent a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    margin-left: 6px;
+    margin-top: -3px;
 
-    background: url('../images/down-white-arrow.svg') center/100% no-repeat;  
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transform: rotate(135deg);
+    transition: all 0.3s ease-in-out;
 }
 
-
-
+.header__top-li a:hover {
+    font-family: var(--bold);
+}
 
 /* 1.TOP MENU END */

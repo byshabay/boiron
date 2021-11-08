@@ -52,8 +52,9 @@
 .common-link_icon::after {
     content: ' ';
     display: block;
-    width: 10px;
+    width: 12px;
     height: 18px;
+    margin-left: 5px;
 
     background: url('../images/link_white.svg') center/100% no-repeat;
 }
