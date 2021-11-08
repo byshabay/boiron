@@ -16,10 +16,29 @@
                 наши продукты
             </h1>
         </div>
-
     </section>
 
     <!-- 2.1.BANNER END -->
+
+    <!-- 2.2.BREADCRUMB START -->
+
+    <section class="breadcrumb">
+        <ul class="container">
+            <li>
+                <a href="<?= $ROOT_URL ?>">
+                    Лаборатория Буарон
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    Наши продукты
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 2.2.BREADCRUMB END -->
 </main>
 
 <!-- 2.MAIN END -->

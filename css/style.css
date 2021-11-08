@@ -116,6 +116,46 @@ COMMON STYLES START
     transform: translateX(-8px);
 }
 
+.breadcrumb {
+    background-color: var(--the-lightest-text);
+}
+
+.breadcrumb ul.container {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.breadcrumb ul.container li:not(:last-child):after {
+    content: ' ';
+    position: relative;
+    width: 5px;
+    height: 5px;
+    margin: 2px 5px 0;
+
+    border-top: 1px solid var(--lighter-text);
+    border-right: 1px solid var(--lighter-text);
+    transform: rotate(45deg);
+}
+
+.breadcrumb ul.container li:not(:last-child) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.breadcrumb ul.container li:last-child a {
+    text-shadow: var(--text-shadow);
+}
+
+.breadcrumb ul.container li a {
+    font-size: 12px;
+
+    color: var(--lighter-text);
+} 
+
 /* 
 -------------------------------------------------
 COMMON STYLES END
