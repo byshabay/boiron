@@ -1,0 +1,41 @@
+/* 1.TOP MENU START */
+
+.header__top {
+    width: 100%;
+
+    background-color: var(--bean-blue);
+}
+
+.header__top .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+}
+
+.header__top .header__top-li > a {
+    margin-right: 14px;
+
+    font-size: var(--text-14);
+
+    color: #fff;
+}
+
+.header__top-parent {
+    display: flex;
+    align-items: center;
+}
+
+.header__top-parent::after {
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    background: url('../images/down-white-arrow.svg') center/100% no-repeat;  
+}
+
+
+
+
+/* 1.TOP MENU END */
