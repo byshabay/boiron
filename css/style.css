@@ -31,6 +31,8 @@
     --light: 'MontserratLight';
     --regular: 'MontserratRegular';
     --bold: 'MontserratBold';
+    --text-shadow: 0px 0px 1px var(--lighter-text);
+    --box-shadow: 0 0 7px 0 rgb(0 0 0 / 15%);
     --text-14: calc( (100vw - 300px)/(1980 - 300) * (14 - 14) + 14px);
 
 }

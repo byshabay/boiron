@@ -32,11 +32,52 @@
                         Ты?
                     </a>
                 </li>
-
             </ul>
         </div>
 
         <!-- 1.TOP MENU END -->
+
+        <nav class="header__nav">
+            <div class="container">
+                <a class="header__logo">
+                    <img src="<?= $ROOT_URL . 'images/logo.png' ?>">
+                </a>
+                <ul class="header__menu">
+                    <li class="header__parent">
+                        <a href="#">
+                            Буарон в мире
+                        </a>
+                    </li>
+                    <li class="header__parent">
+                        <a href="#">
+                            Пресс-центр
+                        </a>
+                    </li>
+                    <li class="header__parent">
+                        <a href="#">
+                            Карьера
+                        </a>
+                    </li>
+                    <li class="header__parent">
+                        <a href="#">
+                            Обратная связь
+                        </a>
+                    </li>
+                    <li>
+                        <form class="search" action="#">
+                            <a href="#" class="search__loupe">
+                                <img src="<?= $ROOT_URL . 'images/search.svg' ?>">
+                            </a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 2.MAIN NAV MENU START -->
+
+
+
+        <!-- 2.MAIN NAV MENU END -->
     </header>
 
 </body>
