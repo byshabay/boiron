@@ -39,6 +39,90 @@
     </section>
 
     <!-- 2.2.BREADCRUMB END -->
+
+    <!-- 2.3.PRODUCT LIST START -->
+
+    <section class="product-list container">
+        <div class="common-h2">
+            Продукты Boiron, которые способствуют благополучию и здоровью, эффективно и без риска.
+        </div>
+
+        <ul class="product-list__ul">
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="common-h3">
+                        Монопрепараты
+                    </div>
+                    <p class="common-p">
+                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
+                    </p>
+                </a>
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
+                    <div class="common-rigth-arrow">
+
+                    </div>
+                    Узнать больше
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="common-h3">
+                        Монопрепараты
+                    </div>
+                    <p class="common-p">
+                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
+                    </p>
+                </a>
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
+                    <div class="common-rigth-arrow">
+
+                    </div>
+                    Узнать больше
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="common-h3">
+                        Монопрепараты
+                    </div>
+                    <p class="common-p">
+                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
+                    </p>
+                </a>
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
+                    <div class="common-rigth-arrow">
+
+                    </div>
+                    Узнать больше
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="common-h3">
+                        Монопрепараты
+                    </div>
+                    <p class="common-p">
+                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
+                    </p>
+                </a>
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
+                    <div class="common-rigth-arrow">
+
+                    </div>
+                    Узнать больше
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 2.3.PRODUCT LIST END -->
 </main>
 
 <!-- 2.MAIN END -->

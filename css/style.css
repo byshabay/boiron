@@ -14,8 +14,7 @@ COMMON STYLES START
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    cursor:  none;
-    cursor: url('../images/cursor.svg') 40 40, crosshair;
+    cursor: url('../images/cursor.svg'), progress;
 }
 
 :root {
@@ -38,9 +37,10 @@ COMMON STYLES START
     --bold: 'MontserratBold';
     --text-shadow: 0px 0px 1px var(--lighter-text);
     --box-shadow: 0 0 7px 0 rgb(0 0 0 / 15%);
+    --box-shadow-12: 0 0 12px 0 rgb(0 0 0 / 15%);
     --banner-inner-shadow: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.42) 67%, rgba(0, 0, 0, 0.7));
     --animation: all 0.3s ease-in-out;
-    --text-14: calc( (100vw - 300px)/(1980 - 300) * (14 - 14) + 14px);
+    --text-20: calc( (100vw - 320px)/(1980 - 320) * (20 - 18) + 18px);
 
 }
 
@@ -88,6 +88,46 @@ COMMON STYLES START
     transform: translateX(-50%);
 }
 
+.common-h2 {
+    margin: 25px auto;
+    max-width: 600px;
+
+    font-family: var(--bold);
+    font-size: 18px;
+
+    color: #000;
+    text-align: center;
+    line-height: 130%;
+}
+
+.common-h3 {
+    margin: 10px;
+
+    font-size: var(--text-20);
+    font-family: var(--bold);
+
+    color: #000;
+    line-height: 150%;
+}
+
+.common-p {
+    margin: 0 10px;
+
+    font-size: 18px;
+    font-family: var(--regular);
+
+    color: #000;
+    line-height: 140%;
+}
+
+.common-mini-p {
+    font-size: 16px;
+    font-family: var(--regular);
+
+    color: var(--lighter-text);
+    line-height: 150%;
+}
+
 .common-banner {
     width: 100%;
     height: calc(100vw / 1.777777778);
@@ -100,6 +140,23 @@ COMMON STYLES START
     margin: 0 auto;
 }
 
+.common-rigth-arrow {
+    width: 20px;
+    height: 11px;
+    margin-right: 8px;
+
+    background: url('../images/right-arrow.svg') center/cover no-repeat;
+    transition: var(--animation);
+}
+
+.common-rigth-arrow__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.common-rigth-arrow__wrapper:hover .common-rigth-arrow {
+    transform: translateX(-8px);
+}
 
 .back-btn {
     padding: 3px 17px;
@@ -177,6 +234,42 @@ PRODUCT PAGE STYLES START
 }
 
 /* 1.BANNER END */
+
+/* 2.PRODUCT LIST START */
+
+.product-list__ul {
+    display: grid;
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 920px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.product-list__ul li {
+    padding-bottom: 60px;
+    position: relative;
+
+    text-align: center;
+    transition: var(--animation);
+}
+
+.product-list__ul li:hover {
+    box-shadow: var(--box-shadow-12);
+}
+
+.product-list__mini-p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.product-list__ul li img {
+    width: 100%;
+}
+
+/* 2.PRODUCT LIST END */
 
 /* 
 -------------------------------------------------
