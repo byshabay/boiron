@@ -48,6 +48,19 @@
     </div>
     <!-- 1.LINK SLIDER END -->
 
+    <!-- 2.FOOTER LOGO START -->
+
+    <div class="footer__logo">
+        <a href="<?= $ROOT_URL ?>">
+            <img src="<?= $ROOT_URL . 'images/logo.png' ?>">
+        </a>
+        <p class="common-p footer__logo-p">
+            Ваше здоровье заслуживает самого большого уважения
+        </p>
+    </div>
+
+    <!-- 2.FOOTER LOGO END -->
+
 </footer>
 </body>
 
