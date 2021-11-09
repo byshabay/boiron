@@ -19,26 +19,12 @@
     min-width: 0; 
 }
 
-#cursor {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: blue;
-  border-radius: 10px;
-  z-index: 1000000000000000;
-} 
 
 .footer__slider .slick-arrow:not(.slick-disabled) {
     cursor: none !important; 
 
     transition: var(--animation);
 } 
-
-#cursor.big-arrow {
-    display: none;
-}
 
 .footer__slider .slick-arrow {
     width: 50px;
@@ -52,6 +38,15 @@
     border: 0px;  
     opacity: 0;
     transition: var(--animation);
+    z-index: 10;
+}
+
+.footer__slider a {
+    transition: var(--animation);
+}
+
+.footer__slider a:hover {
+    font-weight: bold;
 }
 
 .footer__slider .slick-arrow.slick-prev {
@@ -85,6 +80,10 @@
 
 .footer__slider .slick-arrow.slick-prev {
     left: 0;
+}
+
+.footer__slider a {
+
 }
 
 /* 1.LINK SLIDER END */
@@ -177,6 +176,72 @@
     border-right: 0px;
 }
 
-
-
 /* 3.FOOTER COLUMN MENU END */
+
+/* 4.FOOTER ROW MENU START */
+
+.footer__row-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 12px 0;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.footer__row-menu li {
+    margin: 16px;
+}
+
+.footer__row-menu li a {
+    display: block;
+
+    font-size: 16px;
+    
+    text-decoration: underline;
+    color: var(--lighter-text);
+    text-align: center;
+    line-height: 150%;
+    transition: var(--animation);
+}
+
+.footer__row-menu li a:hover {
+    text-shadow: var(--text-shadow);
+}
+
+/* 4.FOOTER ROW MENU END */
+
+/* 5.FOOTER SOCIAL START */
+
+.footer__social {
+    margin-top: 24px;
+}
+
+.footer__social .common-h3 {
+    font-size: 16px;
+    font-family: var(--regular);
+
+    text-align: center;
+}
+
+.footer__social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 35px;
+}
+
+.footer__social-list a {
+    display: block;
+    width: 35px;
+    margin: 0 7px;
+}
+
+.footer__social-list img {
+    width: 100%;
+}
+
+/* 5.FOOTER SOCIAL END */

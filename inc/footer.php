@@ -143,6 +143,85 @@
 
     <!-- 3.FOOTER COLUMN MENU END -->
 
+    <!-- 4.FOOTER ROW MENU START -->
+
+    <ul class="footer__row-menu">
+        <li>
+            <a href="#">
+                Условия обслуживания
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Политика защиты персональных данных
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Политика управления файлами cookie
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Контакт
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Заявление о доступности цифровых технологий
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Антикоррупционная политика и лучшие практики
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Процедура оповещения
+            </a>
+        </li>
+    </ul>
+
+    <!-- 4.FOOTER ROW MENU END -->
+
+    <!-- 5.FOOTER SOCIAL START -->
+
+    <div class="footer__social">
+        <div class="common-h3">
+            Подпишитесь на нас
+        </div>
+        <ul class="footer__social-list container">
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/fb.svg' ?>">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/instagram.png' ?>">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/vk.svg' ?>">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/youtube.svg' ?>">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="<?= $ROOT_URL . 'images/zen.svg' ?>">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 5.FOOTER SOCIAL END -->
+
 </footer>
 </body>
 
