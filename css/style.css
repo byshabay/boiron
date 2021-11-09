@@ -1,0 +1,354 @@
+@import url('../css/imports.css');
+/* 
+-------------------------------------------------
+COMMON STYLES START
+-------------------------------------------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--regular);
+    
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: url('../images/cursor.svg'), progress !important;
+}
+
+:root {
+    --bean-blue: #4A7C8C;
+    --light-text: #313131;
+    --silver: #D1CDCD;
+    --lighter-text: #727272;
+    --the-lightest-text: #EFEFEF;
+    --dark-text: #141414;
+    --link-text: #009AD4;
+    --colored-1: #6C759C;
+    --colored-2: #7FB500;
+    --colored-3: #94C8D6;
+    --colored-4: #4A7C8C;
+    --colored-5: #F99C7D;
+    --colored-brown: #A85F54;
+    --max-width: 1980px;
+    --light: 'MontserratLight';
+    --regular: 'MontserratRegular';
+    --bold: 'MontserratBold';
+    --text-shadow: 0px 0px 1px var(--lighter-text);
+    --box-shadow: 0 0 7px 0 rgb(0 0 0 / 15%);
+    --box-shadow-12: 0 0 12px 0 rgb(0 0 0 / 15%);
+    --banner-inner-shadow: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.42) 67%, rgba(0, 0, 0, 0.7));
+    --animation: all 0.3s ease-in-out;
+    --text-20: calc( (100vw - 320px)/(1980 - 320) * (20 - 18) + 18px);
+
+}
+
+.container {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.common-link_icon,
+.common-link_white-icon{
+    display: flex;
+    align-items: center;
+}
+
+.common-link_icon {
+    color: var(--link-text);
+}
+
+.common-link_white-icon::after,
+.common-link_icon::after {
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 18px;
+    margin-left: 5px;
+
+    background: url('../images/link_white.svg') center/100% no-repeat;
+}
+
+.common-link_icon::after {
+    background: url('../images/link.svg') center/100% no-repeat;
+}
+
+.common-h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+
+    font-family: var(--bold);
+    font-size: 48px;
+
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+    
+    transform: translateX(-50%);
+}
+
+.common-h2 {
+    margin: 25px auto;
+    max-width: 600px;
+
+    font-family: var(--bold);
+    font-size: 18px;
+
+    color: #000;
+    text-align: center;
+    line-height: 130%;
+}
+
+.common-h3 {
+    margin: 10px;
+
+    font-size: var(--text-20);
+    font-family: var(--bold);
+
+    color: #000;
+    line-height: 150%;
+}
+
+.common-p {
+    margin: 0 10px;
+
+    font-size: 18px;
+    font-family: var(--regular);
+
+    color: #000;
+    line-height: 140%;
+}
+
+.common-mini-p {
+    font-size: 16px;
+    font-family: var(--regular);
+
+    color: var(--lighter-text);
+    line-height: 150%;
+}
+
+.common-banner {
+    width: 100%;
+    height: calc(100vw / 1.777777778);
+    max-height: 810px;
+    padding-top: 90px;
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.common-rigth-arrow {
+    width: 20px;
+    height: 11px;
+    margin-right: 8px;
+
+    background: url('../images/right-arrow.svg') center/cover no-repeat;
+    transition: var(--animation);
+}
+
+.common-rigth-arrow__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.common-rigth-arrow__wrapper:hover .common-rigth-arrow {
+    transform: translateX(-8px);
+}
+
+.back-btn {
+    padding: 3px 17px;
+    display: inline-block;
+    margin-top: 12px;
+
+    border: 2px solid var(--lighter-text);
+    border-radius: 20px;
+}
+
+.back-btn img {
+    transition: var(--animation);
+}
+
+.back-btn:hover img {
+    transform: translateX(-8px);
+}
+
+.breadcrumb {
+    background-color: var(--the-lightest-text);
+}
+
+.breadcrumb ul.container {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.breadcrumb ul.container li:not(:last-child):after {
+    content: ' ';
+    position: relative;
+    width: 5px;
+    height: 5px;
+    margin: 2px 5px 0;
+
+    border-top: 1px solid var(--lighter-text);
+    border-right: 1px solid var(--lighter-text);
+    transform: rotate(45deg);
+}
+
+.breadcrumb ul.container li:not(:last-child) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.breadcrumb ul.container li:last-child a {
+    text-shadow: var(--text-shadow);
+}
+
+.breadcrumb ul.container li a {
+    font-size: 12px;
+
+    color: var(--lighter-text);
+} 
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+/* 
+-------------------------------------------------
+COMMON STYLES END
+-------------------------------------------------
+*/
+
+/* 
+-------------------------------------------------
+PRODUCT PAGE STYLES START
+-------------------------------------------------
+*/
+
+/* 1.BANNER START */
+
+.product-banner {
+    background-image: var(--banner-inner-shadow) , url('../images/product-bkg.png');
+}
+
+/* 1.BANNER END */
+
+/* 2.PRODUCT LIST START */
+
+.product-list__ul {
+    display: grid;
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 920px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.product-list__ul li {
+    padding-bottom: 60px;
+    position: relative;
+
+    text-align: center;
+    transition: var(--animation);
+}
+
+.product-list__ul li:hover {
+    box-shadow: var(--box-shadow-12);
+}
+
+.product-list__mini-p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.product-list__ul li img {
+    width: 100%;
+}
+
+/* 2.PRODUCT LIST END */
+
+/* 
+-------------------------------------------------
+PRODUCT PAGE STYLES END
+-------------------------------------------------
+*/
+
+
+
+/* 
+-------------------------------------------------
+FONTS START
+-------------------------------------------------
+*/
+
+/* 1.MONTSERRAT LIGHT START */
+@font-face {
+  font-family: 'MontserratLight';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/montserrat-v18-latin_cyrillic-100.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v18-latin_cyrillic-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v18-latin_cyrillic-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v18-latin_cyrillic-100.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* 1.MONTSERRAT LIGHT END */
+
+/* 2.MONTSERRAT REGULAR START */
+
+@font-face {
+  font-family: 'MontserratRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v18-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* 2.MONTSERRAT REGULAR END */
+
+/* 3.MONTSERRAT BOLD START */
+
+@font-face {
+  font-family: 'MontserratBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v18-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v18-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v18-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v18-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* 3.MONTSERRAT BOLD END */
+
+/* 
+-------------------------------------------------
+FONTS END
+-------------------------------------------------
+*/
