@@ -61,6 +61,88 @@
 
     <!-- 2.FOOTER LOGO END -->
 
+    <!-- 3.FOOTER COLUMN MENU START -->
+
+    <ul class="footer__column-menu container">
+        <div class="footer__column-wrapper">
+            <div class="footer__column-h1">
+                ПРЯМОЙ ДОСТУП
+            </div>
+            <li>
+                <a href="#">
+                    Коротко о Boiron
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Laboratories
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Лечить без вреда
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Наши продукты
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Мое ежедневное здоровье
+                </a>
+            </li>
+        </div>
+        <div class="footer__column-wrapper">
+            <div class="footer__column-h1">
+                САМЫЕ ЧИТАЕМЫЕ СТАТЬИ
+            </div>
+            <li>
+                <a href="#">
+                    Как подготовиться к возвращению в ясли или детский сад?
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Как избавить ребенка от укусов насекомых?
+                </a>
+            </li>
+        </div>
+        <div class="footer__column-wrapper">
+            <div class="footer__column-h1">
+                ТЫ ?
+            </div>
+            <li>
+                <a href="#">
+                    Кандидаты
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Специалисты в области здравоохранения
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Поставщики-партнеры
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Акционеры и инвесторы
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Журналистов
+                </a>
+            </li>
+        </div>
+    </ul>
+
+    <!-- 3.FOOTER COLUMN MENU END -->
+
 </footer>
 </body>
 
