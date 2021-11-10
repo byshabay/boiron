@@ -58,10 +58,7 @@
                         Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
                     </p>
                 </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
-                    <div class="common-rigth-arrow">
-
-                    </div>
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
                     Узнать больше
                 </a>
             </li>
@@ -76,10 +73,7 @@
                         Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
                     </p>
                 </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
-                    <div class="common-rigth-arrow">
-
-                    </div>
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
                     Узнать больше
                 </a>
             </li>
@@ -94,10 +88,8 @@
                         Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
                     </p>
                 </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
-                    <div class="common-rigth-arrow">
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
 
-                    </div>
                     Узнать больше
                 </a>
             </li>
@@ -112,10 +104,7 @@
                         Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
                     </p>
                 </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow__wrapper">
-                    <div class="common-rigth-arrow">
-
-                    </div>
+                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
                     Узнать больше
                 </a>
             </li>

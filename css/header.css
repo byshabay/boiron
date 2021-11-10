@@ -138,17 +138,17 @@
 
 /* 2.MAIN NAV MENU START */
 
-.header__nav .container {
+.header__nav > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
     height: 60px;
 
     z-index: 100;
 }
 
 .header__nav {
+    position: relative;
     width: 100%;
 
     box-shadow: var(--box-shadow);
@@ -158,27 +158,40 @@
 .header__menu {
     display: flex;
     justify-content: flex-end;
-    align-items: stretch;
+    height: 100%;
+    align-items: center;
 }
 
 .header__menu > li {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-.header__parent {
-    border-right: solid 1px var(--silver);
+.header__parent::after {
+    content: ' ';
+    display: block;
+    width: 1px;
+    height: 25px;
+
+    background-color: var(--silver);
 }
 
-.header__parent a {
+.header__parent > a {
     padding: 0 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     font-size: 14px;
 
     color: var(--lighter-text);
 }
 
-.header__parent a:hover {
+.header__parent > a:hover {
     text-shadow: var(--text-shadow) ;
 }
 
@@ -203,5 +216,163 @@
     width: 28px;
     height: 29px;
 }
+
+/* 2.1.MAIN NAV SUBMENU START */
+
+.header__submenu {
+    position: absolute;
+    top: -150%;
+    /* top: 60px; */
+    left: 0;
+    width: 100%;
+    z-index: -2;
+
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--animation);
+}
+
+.header__parent:hover > .header__submenu {
+    top: 60px;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+a.header__submenu-h1 {
+    margin-top: 50px;
+    display: block;
+
+    font-size: 28px;
+    font-family: var(--bold);
+
+    text-transform: uppercase;
+    color: var(--lighter-text);
+}
+
+.header__submenu-ul {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 26px;
+}
+
+.header__submenu-ul > div {
+    width: 50%;
+    padding-left: 20px;
+    border-left: 1px solid var(--lighter-text);
+}
+
+.header__submenu-ul > div a {
+    margin-right: 15px;
+    
+    font-size: 16px;
+
+    color: var(--lighter-text);
+    line-height: 150%;
+}
+
+.header__submenu-ul > div li:not(:first-child) {
+    margin-top: 32px;
+}
+
+.header__submenu .container {
+    display: flex;
+    min-height: 350px;
+}
+
+.header__submenu-main {
+    width: 65%;
+    padding-bottom: 50px;
+}
+
+.header__submenu-right-wrapper {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    box-shadow: -2px 0px 4px 0 rgb(0 0 0 / 15%);
+}
+
+.header__submenu-right-content {
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    color: #fff;
+    line-height: 150%;
+    background: url('../images/header-sub-bk-1.jpg.webp') center/cover no-repeat;
+}
+
+.header__submenu-right-content::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    background-color: #000;
+    opacity: 0.2;
+    z-index: 5;
+}
+
+.header__submenu-circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 6;
+    top: -20%;
+
+    background: url('../images/product-bkg.png') center/cover no-repeat;
+}
+
+.header__submenu-circle-mask {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: 7;
+    top: -20%;
+
+    background: url('../images/circle-violet.webp') center/cover no-repeat;
+}
+
+.header__submenu-h2 {
+    z-index: 5;
+    margin: 0 16px;
+
+    font-size: var(--text-20);
+    font-family: var(--bold);
+
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150%;
+}
+
+.header__submenu-p {
+    width: 80%;
+    margin: 0 16px;
+    z-index: 5;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-align: center; 
+    line-height: 150%;
+}
+
+.header__submenu-right-content .common-white-btn {
+    z-index: 5;
+}
+
+
+/* 2.1.MAIN NAV SUBMENU END */
 
 /* 2.MAIN NAV MENU END */

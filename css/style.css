@@ -146,20 +146,24 @@ COMMON STYLES START
 }
 
 .common-rigth-arrow {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.common-rigth-arrow::before {
+    content: ' ';
     width: 20px;
     height: 11px;
+    display: block;
+    position: relative;
     margin-right: 8px;
 
     background: url('../images/right-arrow.svg') center/cover no-repeat;
     transition: var(--animation);
 }
 
-.common-rigth-arrow__wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.common-rigth-arrow__wrapper:hover .common-rigth-arrow {
+.common-rigth-arrow:hover::before {
     transform: translateX(-8px);
 }
 
@@ -226,6 +230,25 @@ COMMON STYLES START
 
 .slick-list {
     overflow: hidden;
+}
+
+.common-white-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 0 15px;
+
+    font-size: 14px;
+
+    color: var(--lighter-text);
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 22px;
+    transition: var(--animation);
+}
+
+.common-white-btn:hover {
+    background-color: var(--lighter-text);
+    color: #fff;
 }
 
 /* 
