@@ -460,8 +460,7 @@ a.header__submenu-h1 {
 .header__mobile-submenu {
     position: fixed;
     top: 0;
-    right: 0;
-    left: -100%;
+    right: -100%;
     width: 390px;
     height: 100%;
     padding-top: 50px;
@@ -471,8 +470,16 @@ a.header__submenu-h1 {
     overflow-x: hidden;
     background: #fff;
     box-shadow: var(--box-shadow);
+    transition: all .5s ease-in-out;
 }
 
+.header__mobile-menu.-opened {
+    right: 0;
+}
+
+.header__mobile-submenu.-opened {
+    right: 0;
+}
 
 .header__mobile-submenu {
     z-index: 1;
@@ -515,22 +522,24 @@ a.header__submenu-h1 {
 
 .header__mobile-menu ul {
     margin-top: 36px;
-    padding-bottom: 36px;
 }
 
-.header__mobile-menu > ul:not(.header__social-list) li {
+.header__mobile-main-list li {
     width: 100%;
     position: relative;
     height: 100%;
-    padding: 20px 0;
-    flex-direction: row-reverse;
-    justify-content: space-between;
 
     font-size: 18px;
 
     color: var(--lighter-text);
     border-bottom: 1px solid var(--lighter-text);
     line-height: 150%;
+}
+
+.header__mobile-main-list .common-rigth-arrow {
+    padding: 20px 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .header__mobile-menu ul li:last-child {
