@@ -13,6 +13,7 @@ COMMON STYLES START
     
     list-style: none;
     text-decoration: none;
+    outline: none;
     box-sizing: border-box;
     cursor: url('../images/cursor.svg'), progress !important;
 }
@@ -53,7 +54,8 @@ COMMON STYLES START
 }
 
 .common-link_icon,
-.common-link_white-icon{
+.common-link_white-icon,
+.common-link_grey-icon {
     display: flex;
     align-items: center;
 }
@@ -63,7 +65,8 @@ COMMON STYLES START
 }
 
 .common-link_white-icon::after,
-.common-link_icon::after {
+.common-link_icon::after,
+.common-link_grey-icon::after {
     content: ' ';
     display: block;
     width: 12px;
@@ -75,6 +78,11 @@ COMMON STYLES START
 
 .common-link_icon::after {
     background: url('../images/link.svg') center/100% no-repeat;
+}
+
+.common-link_grey-icon::after {
+    background: url('../images/link_grey.svg') center/100% no-repeat;
+
 }
 
 .common-h1 {
@@ -247,10 +255,24 @@ COMMON STYLES START
     transition: var(--animation);
 }
 
-.common-white-btn:hover {
+.common-white-btn:hover,
+.common-border-btn:hover {
     background-color: var(--lighter-text);
     color: #fff;
 }
+
+.common-border-btn {
+    padding: 5px 15px;
+
+    font-size: 18px;
+
+    text-align: center;
+    border: 1px solid var(--lighter-text);
+    color: var(--lighter-text);
+    transition: var(--animation);
+    border-radius: 22px;
+}
+
 
 /* 
 -------------------------------------------------
@@ -275,12 +297,6 @@ PRODUCT PAGE STYLES START
 /* 2.PRODUCT LIST START */
 
 .product-list__ul {
-    /* display: grid;
-    margin: 100px auto 0;
-    width: 100%;
-    max-width: 920px;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; */
     display: flex;
     margin-top: 100px;
     justify-content: center;

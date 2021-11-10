@@ -86,6 +86,8 @@
 
         <!-- 1.TOP MENU END -->
 
+        <!-- 2.MAIN NAV MENU START -->
+
         <nav class="header__nav">
             <div class="container">
                 <a class="header__logo">
@@ -413,9 +415,84 @@
                 </ul>
             </div>
         </nav>
-        <!-- 2.MAIN NAV MENU START -->
-
-
 
         <!-- 2.MAIN NAV MENU END -->
+
+        <!-- 3.MAIN MOBILE MENU START -->
+        <nav class="header__mobile-nav">
+            <div class="container">
+                <a class="header__logo">
+                    <img src="<?= $ROOT_URL . 'images/logo.png' ?>">
+                </a>
+                <button class="header__mobile-burger-wrapper">
+                    <div>
+                        МЕНЮ
+                    </div>
+                    <div class="header__mobile-burger">
+                        <span>
+
+                        </span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="header__mobile-menu">
+                <div class="container">
+                    <form class="header__mobile-search">
+                        <input type="text" placeholder="Поиск">
+                        <button type="submit"></button>
+                    </form>
+                    <ul>
+                        <li class="common-rigth-arrow">
+                            Буарон в мире
+                        </li>
+                        <li class="common-rigth-arrow">
+                            Пресс-центр
+                        </li>
+                        <li class="common-rigth-arrow">
+                            Карьера
+                        </li>
+                        <li class="common-rigth-arrow">
+                            Обратная связь
+                        </li>
+                    </ul>
+                    <a href="#" class="common-border-btn common-link_grey-icon">
+                        Специалисты в области здравоохранения
+                    </a>
+                    <div href="#" class="common-border-btn">
+                        Ты?
+                    </div>
+
+                    <ul class="header__social-list container">
+                        <li>
+                            <a href="#">
+                                <img src="<?= $ROOT_URL . 'images/fb.svg' ?>">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="<?= $ROOT_URL . 'images/instagram.png' ?>">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="<?= $ROOT_URL . 'images/vk.svg' ?>">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="<?= $ROOT_URL . 'images/youtube.svg' ?>">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="<?= $ROOT_URL . 'images/zen.svg' ?>">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <!-- 3.MAIN MOBILE MENU END -->
     </header>
