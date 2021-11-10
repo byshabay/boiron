@@ -11,11 +11,10 @@
     width: 100%;
 
     background-color: var(--bean-blue);
-    z-index: 99;
     position: relative;
 }
 
-.header__top .container {
+.header__top > .container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -25,6 +24,7 @@
 .header__top .header__top-li > a {
     display: flex;
     align-items: center;
+    height: 30px;
 
     font-size: 12px;
 
@@ -40,7 +40,7 @@
     align-items: center;
 }
 
-.header__top-parent a::after {
+.header__top-parent > a::after {
     content: '';
     width: 5px;
     height: 5px;
@@ -54,7 +54,7 @@
 }
 
 .header__top-li a:hover {
-    font-family: var(--bold);
+    font-weight: bold;
 }
 
 .search__loupe {
@@ -62,6 +62,77 @@
     
     padding-left: 10px;
 }
+
+/* 1.1.HEADER TOP SUBMENU START */
+
+.header__top-submenu { 
+    position: fixed;
+    padding: 35px 0;
+    top: -240px;
+    left: 0;
+    width: 100%;
+
+    z-index: 102;
+    background: #fff;
+    transition: all .4s linear;
+}
+
+.header__top-parent:hover > .header__top-submenu {
+    top: 30px;
+}
+
+.header__top-submenu .container {
+    display: flex;
+    align-items: center;
+   
+}
+
+.header__top-submenu li {
+    display: block;
+    position: relative;
+    width: 25%;
+    height: 147px;
+    margin-right: 22px;
+}
+
+.header__top-submenu li img {
+    object-fit: cover;
+}
+
+.header__top-submenu li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    font-size: 20px;
+
+    color: #fff;
+    background-color: rgba(114, 114, 114, 0.45);
+}
+
+.header__top-submenu li:nth-child(1) {
+    background: url('../images/header-top-1.png') center/cover no-repeat;
+}
+
+.header__top-submenu li:nth-child(2) {
+    background: url('../images/header-top-2.png') center/cover no-repeat;
+}
+
+.header__top-submenu li:nth-child(3) {
+    background: url('../images/header-top-3.png') center/cover no-repeat;
+}
+
+.header__top-submenu li:nth-child(4) {
+    background: url('../images/header-top-4.png') center/cover no-repeat;
+}
+
+.header__top-submenu li:nth-child(5) {
+    background: url('../images/header-top-5.png') center/cover no-repeat;
+}
+
+
+/* 1.1.HEADER TOP SUBMENU END */
 
 /* 1.TOP MENU END */
 
