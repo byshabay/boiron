@@ -456,10 +456,12 @@ a.header__submenu-h1 {
     bottom: 0;
 }
 
-.header__mobile-menu {
+.header__mobile-menu,
+.header__mobile-submenu {
     position: fixed;
     top: 0;
     right: 0;
+    left: -100%;
     width: 390px;
     height: 100%;
     padding-top: 50px;
@@ -469,6 +471,11 @@ a.header__submenu-h1 {
     overflow-x: hidden;
     background: #fff;
     box-shadow: var(--box-shadow);
+}
+
+
+.header__mobile-submenu {
+    z-index: 1;
 }
 
 .header__mobile-search {
@@ -511,7 +518,7 @@ a.header__submenu-h1 {
     padding-bottom: 36px;
 }
 
-.header__mobile-menu ul:not(.header__social-list) li {
+.header__mobile-menu > ul:not(.header__social-list) li {
     width: 100%;
     position: relative;
     height: 100%;
@@ -551,7 +558,6 @@ a.header__submenu-h1 {
     width: 22px;
 }
 
-
 .header__social-list {
     display: flex;
     align-items: center;
@@ -569,6 +575,95 @@ a.header__submenu-h1 {
 .header__social-list img {
     width: 100%;
 }
+
+/* 3.1.MODILE SUBMENU START */
+
+.header__back-btn.common-rigth-arrow {
+    position: absolute;
+    justify-content: flex-end;
+    top: 0;
+    bottom: 0;
+    left: 22px;
+
+    transform: rotate(180deg);
+}
+
+.header__mobile-submenu-head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 30px;
+    position: relative;
+}
+
+.header__mobile-submenu-head a {
+    position: relative;
+
+    font-size: 18px;
+
+    color: #000;
+    text-transform: uppercase;
+}
+
+.header__mobile-submenu-head a svg {
+    display: block;
+    width: 210px;
+}
+
+.header__mobile-info-box.container {
+    margin-top: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    background: var(--colored-4);
+}
+
+.header__mobile-submenu-h2 {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    font-family: var(--bold);
+
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    line-height: 150%;
+}
+
+.header__mobile-submenu-p {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    font-weight:bold;
+
+    text-align: center;
+    color: #fff;
+    line-height: 150%;
+}
+
+.header__mobile-info-box a.common-border-btn {
+    margin-top: 10px;
+
+    color: #fff;
+    border-color: #fff;
+}
+
+.header__mobile-info-box a.common-border-btn:hover {
+    background-color: #fff;
+    color: var(--lighter-text);
+}
+
+.header__mobile-submenu li a {
+    margin: 20px 0;
+
+    font-size: 16px;
+
+    color: var(--lighter-text);
+    line-height: 150%;
+}
+
+
+/* 3.1.MODILE SUBMENU END */
 
 /* 3.MAIN MOBILE MENU END */
 

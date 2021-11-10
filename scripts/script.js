@@ -10,5 +10,7 @@ $(document).ready(function () {
 
     // 1.FOOTER SLIDER END
 
+    // 2.MOBILE MENU APPEARANCE START
+
 
 });
