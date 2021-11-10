@@ -7,15 +7,13 @@
 <main class="main">
     <!-- 2.1.BANNER START -->
 
-    <section class="common-banner product-banner">
-        <div class="container">
-            <a href="<?= $ROOT_URL ?>" class="back-btn">
-                <img src="<?= $ROOT_URL . 'images/back-arrow.svg' ?>">
-            </a>
-            <h1 class="common-h1">
-                наши продукты
-            </h1>
-        </div>
+    <section class="common-banner product-banner container">
+        <a href="<?= $ROOT_URL ?>" class="back-btn">
+            <img src="<?= $ROOT_URL . 'images/back-arrow.svg' ?>">
+        </a>
+        <h1 class="common-h1">
+            наши продукты
+        </h1>
     </section>
 
     <!-- 2.1.BANNER END -->

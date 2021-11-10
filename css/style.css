@@ -49,7 +49,7 @@ COMMON STYLES START
     max-width: var(--max-width);
     width: 100%;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .common-link_icon,
@@ -137,6 +137,7 @@ COMMON STYLES START
     width: 100%;
     height: calc(100vw / 1.777777778);
     max-height: 810px;
+    max-width: 1920px;
     padding-top: 90px;
     
     background-size: cover;
@@ -266,7 +267,7 @@ PRODUCT PAGE STYLES START
 /* 1.BANNER START */
 
 .product-banner {
-    background-image: var(--banner-inner-shadow) , url('../images/product-bkg.png');
+    background-image: var(--banner-inner-shadow) , url('../images/product-bkg.png.webp');
 }
 
 /* 1.BANNER END */
@@ -274,17 +275,23 @@ PRODUCT PAGE STYLES START
 /* 2.PRODUCT LIST START */
 
 .product-list__ul {
-    display: grid;
+    /* display: grid;
     margin: 100px auto 0;
     width: 100%;
     max-width: 920px;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 20px; */
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .product-list__ul li {
     padding-bottom: 60px;
     position: relative;
+    width: 450px;
+    margin: 20px 10px 0 10px;
 
     text-align: center;
     transition: var(--animation);

@@ -131,6 +131,9 @@
     background: url('../images/header-top-5.png') center/cover no-repeat;
 }
 
+.header__top-submenu li:last-child {
+    margin: 0;
+}
 
 /* 1.1.HEADER TOP SUBMENU END */
 
@@ -199,6 +202,7 @@
     display: block;
     position: relative;
     width: 130px;
+    z-index: 1;
 }
 
 .header__logo img {
@@ -376,3 +380,13 @@ a.header__submenu-h1 {
 /* 2.1.MAIN NAV SUBMENU END */
 
 /* 2.MAIN NAV MENU END */
+
+/* 3.MEDIA START */
+
+/* 1025px */
+
+@media (max-width: 1025px){
+    
+}
+
+/* 3.MEDIA END */
