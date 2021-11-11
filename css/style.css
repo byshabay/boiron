@@ -273,6 +273,15 @@ COMMON STYLES START
     border-radius: 22px;
 }
 
+/* 1.COMMON MEDIA START */
+
+/* 1025px */
+@media (max-width: 1025px) {
+    
+}
+
+/* 1.COMMON MEDIA END */
+
 
 /* 
 -------------------------------------------------
@@ -329,6 +338,15 @@ PRODUCT PAGE STYLES START
 }
 
 /* 2.PRODUCT LIST END */
+
+/* 3.PRODUCT MEDIA START */
+
+/* 1025px */
+@media (max-width: 1025px) {
+
+}
+
+/* 3.PRODUCT MEDIA END */
 
 /* 
 -------------------------------------------------
