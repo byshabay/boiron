@@ -48,7 +48,9 @@
         <ul class="product-list__ul">
             <li>
                 <a href="#">
-                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="product-list__img">
+                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    </div>
                     <div class="common-h3">
                         Монопрепараты
                     </div>
@@ -63,7 +65,9 @@
 
             <li>
                 <a href="#">
-                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="product-list__img">
+                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    </div>
                     <div class="common-h3">
                         Монопрепараты
                     </div>
@@ -78,7 +82,9 @@
 
             <li>
                 <a href="#">
-                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="product-list__img">
+                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    </div>
                     <div class="common-h3">
                         Монопрепараты
                     </div>
@@ -94,7 +100,9 @@
 
             <li>
                 <a href="#">
-                    <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    <div class="product-list__img">
+                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+                    </div>
                     <div class="common-h3">
                         Монопрепараты
                     </div>

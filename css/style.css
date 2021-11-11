@@ -277,7 +277,9 @@ COMMON STYLES START
 
 /* 1025px */
 @media (max-width: 1025px) {
-    
+    .common-banner .common-h1 {
+        font-size: 23px;
+    }
 }
 
 /* 1.COMMON MEDIA END */
@@ -343,7 +345,37 @@ PRODUCT PAGE STYLES START
 
 /* 1025px */
 @media (max-width: 1025px) {
+    .product-list__ul li img {
+        display: block;
+        position: relative;
+        object-fit: cover;
+        height: 250px;
+    }
 
+    .product-list__ul {
+        margin: 0;
+    }
+    
+    .product-list__ul .product-list__img {
+        position: relative;
+    }
+
+    .product-list__ul .product-list__img::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: -1px;
+        width: 101%;
+        height: 70px;
+
+        background: url('../images/mask-white-bottom.png') center/cover no-repeat;
+    }
+
+    .product-list__ul li {
+        width: 100%;
+    }
 }
 
 /* 3.PRODUCT MEDIA END */

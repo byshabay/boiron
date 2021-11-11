@@ -263,6 +263,10 @@
 
 /* 1025px */
 @media (max-width: 1025px) {
+    .footer {
+        padding-top: 40px;
+    }
+
     .footer__column-menu.container {
         flex-direction: column;
 
