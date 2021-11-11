@@ -333,7 +333,7 @@ PRODUCT PAGE STYLES START
 /* 1.BANNER START */
 
 .product-banner {
-    background-image: var(--banner-inner-shadow) , url('../images/product-bkg.png.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 67%, rgba(0, 0, 0, 0.7)), url('../images/product-bkg.png.png');
 }
 
 /* 1.BANNER END */

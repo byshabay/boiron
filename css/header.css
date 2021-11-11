@@ -349,7 +349,7 @@ a.header__submenu-h1 {
 
     color: #fff;
     line-height: 150%;
-    background: url('../images/header-sub-bk-1.jpg.webp') center/cover no-repeat;
+    background: url('../images/header-sub-bk-1.jpg.png') center/cover no-repeat;
 }
 
 .header__submenu-right-content::before {
@@ -383,7 +383,7 @@ a.header__submenu-h1 {
     z-index: 7;
     top: -20%;
 
-    background: url('../images/circle-violet.webp') center/cover no-repeat;
+    background: url('../images/circle-blue.png') center/cover no-repeat;
 }
 
 .header__submenu-h2 {
