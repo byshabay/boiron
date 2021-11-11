@@ -273,6 +273,10 @@ COMMON STYLES START
     border-radius: 22px;
 }
 
+body.-opened {
+    overflow-y: hidden !important;
+}
+
 /* 1.COMMON MEDIA START */
 
 /* 1025px */

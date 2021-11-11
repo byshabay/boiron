@@ -61,8 +61,6 @@ $(document).ready(function () {
             $(classes).toggleClass('-opened');
         }
 
-        console.log($(this).siblings('.header__mobile-submenu'));
-
     }
 
     /**
@@ -74,9 +72,28 @@ $(document).ready(function () {
 
     var clickEventType = (($(document).ontouchstart !== null) ? 'click' : 'touchstart');
 
-    $('.header__mobile-burger').on(clickEventType, { classes: '.header__mobile-menu, .-opened, .main, .header__mobile-burger', }, openElem);
+    $('.header__mobile-burger-wrapper').on(clickEventType, { classes: '.header__mobile-menu, .-opened, body, .header__mobile-burger', }, openElem);
     $('.header__mobile-main-list li > div, .header__mobile-you-btn').on(clickEventType, { classes: '.header__mobile-submenu', siblingsElem: true }, openElem);
     $('.header__back-btn').on(clickEventType, { classes: '.header__mobile-submenu', closes: true }, openElem);
+
+    // 2.1.NOT A HEADER CLICK = CLOSE START
+
+    if (
+        $('.-opened')
+    ) {
+        $('body').on(clickEventType, function (e) {
+            if (
+                $('.header__mobile-menu').has(e.target).length === 0 &&
+                $('.header__mobile-burger-wrapper').has(e.target).length === 0
+            ) {
+                $('.-opened').removeClass('-opened');
+            }
+        });
+    }
+
+
+
+    // 2.1.NOT A HEADER CLICK = CLOSE END
 
     // 2.MOBILE MENU APPEARANCE END
 
