@@ -475,12 +475,17 @@ a.header__submenu-h1 {
 
     background-color: var(--colored-4);
     border-radius: 1px;
-    transition: opacity 0s linear 0.15s, background 0.2s linear;
+    transition: var(--animation);
 }
 
 .header__mobile-burger::before {
     content: ' ';
     top: 0;
+}
+
+.header__mobile-burger.-opened::before {
+    transform: rotate(45deg);
+    top: 10px;
 }
 
 .header__mobile-burger span {
@@ -489,10 +494,21 @@ a.header__submenu-h1 {
     cursor: pointer;
 }
 
+
+.header__mobile-burger.-opened span {
+    opacity: 0;
+}
+
 .header__mobile-burger::after {
     content: ' ';
     bottom: 0;
 }
+
+.header__mobile-burger.-opened::after {
+    transform: rotate(-45deg);
+    bottom: 10px;
+}
+
 
 .header__mobile-menu,
 .header__mobile-submenu {
@@ -711,12 +727,6 @@ a.header__submenu-h1 {
 
 
 /* 3.1.MODILE SUBMENU END */
-
-/* 3.2.MOBILE YOU? SUBMENU START */
-
-
-
-/* 3.2.MOBILE YOU? SUBMENU END */
 
 /* 3.MAIN MOBILE MENU END */
 

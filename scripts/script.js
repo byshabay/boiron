@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     var clickEventType = (($(document).ontouchstart !== null) ? 'click' : 'touchstart');
 
-    $('.header__mobile-burger').on(clickEventType, { classes: '.header__mobile-menu, .-opened, .main', }, openElem);
+    $('.header__mobile-burger').on(clickEventType, { classes: '.header__mobile-menu, .-opened, .main, .header__mobile-burger', }, openElem);
     $('.header__mobile-main-list li > div, .header__mobile-you-btn').on(clickEventType, { classes: '.header__mobile-submenu', siblingsElem: true }, openElem);
     $('.header__back-btn').on(clickEventType, { classes: '.header__mobile-submenu', closes: true }, openElem);
     // 2.MOBILE MENU APPEARANCE END
