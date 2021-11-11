@@ -4,8 +4,42 @@ $(document).ready(function () {
 
     $('.footer__slider').slick({
         infinite: false,
-        slidesToShow: 7.2,
+        slidesToShow: 1.8,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 7.2
+                }
+            },
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 6.2
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 4.2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 3.2
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 2.2
+                }
+            }
+        ],
+
+        mobileFirst: true
     });
 
     // 1.FOOTER SLIDER END
@@ -43,6 +77,7 @@ $(document).ready(function () {
     $('.header__mobile-burger').on(clickEventType, { classes: '.header__mobile-menu, .-opened, .main, .header__mobile-burger', }, openElem);
     $('.header__mobile-main-list li > div, .header__mobile-you-btn').on(clickEventType, { classes: '.header__mobile-submenu', siblingsElem: true }, openElem);
     $('.header__back-btn').on(clickEventType, { classes: '.header__mobile-submenu', closes: true }, openElem);
+
     // 2.MOBILE MENU APPEARANCE END
 
 });
