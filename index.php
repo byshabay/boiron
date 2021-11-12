@@ -21,21 +21,21 @@
             <!-- TUBS START -->
 
             <div class="pages-slider__tubs">
-                <a class=" pages-slider__tub " href="#pages-slider__1">
+                <a id="pages-slider__1" class=" pages-slider__tub " href="#">
                     ПРИВЕТСТВИЕ ОТ ВАЛЕРИ
                     <br>ПУАНСО
                 </a>
 
-                <a class="pages-slider__tub" href="#pages-slider__2">
+                <a id="pages-slider__2" class="pages-slider__tub" href="#">
                     ЛАБОРАТОРИЯ БУАРОН
                 </a>
-                <a class="pages-slider__tub" href="#pages-slider__3">
+                <a id="pages-slider__3" class="pages-slider__tub" href="#">
                     ЛЕЧение БЕЗ ВРЕДА
                 </a>
-                <a class="pages-slider__tub -active" href="#pages-slider__4">
+                <a id="pages-slider__4" class="pages-slider__tub -active" href="#">
                     НАШИ ПРОДУКТЫ
                 </a>
-                <a class="pages-slider__tub" href="#pages-slider__5">
+                <a id="pages-slider__5" class="pages-slider__tub" href="#">
                     МОЕ <br> ЕЖЕДНЕВНОЕ ЗДОРОВЬЕ
                 </a>
             </div>
@@ -201,6 +201,28 @@
 
 
     <!-- 2.1.PAGES SLIDER END -->
+
+    <!-- 2.2.LAZY LOAD WRAPPER START -->
+
+    <section class="lazyload container">
+        <img src="<?= $ROOT_URL . 'images/lazyload.jpg' ?>">
+        <div class="lazyload__info-box">
+            <a href="#">
+                <div class="lazyload__h2">
+                    наши продукты
+                </div>
+                <p class="lazyload__p">
+                    Продукты компании Буарон оказывают бережное и эффективное влияние на ваше здоровье.
+                </p>
+                <span class="lazyload__btn">
+                    Откройте для себя нашу продукцию
+                </span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- 2.2.LAZY LOAD WRAPPER END -->
 
 </main>
 

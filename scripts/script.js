@@ -103,23 +103,96 @@ $(document).ready(function () {
      * Приведенный ниже код изменить для классов с помощью  slice(1)
      */
 
+    // 3.1.CHANGE SLIDES START (HOVER)
+
     function openTubs(e) {
         e.preventDefault();
+        let type = e.data.type;
 
-        let tubHref = '.' + $(this).attr('href').slice(1);
-        $('.-active').removeClass('-active');
+        if (
+            type == 'hover'
+        ) {
+            let tubID = '.' + $(this).attr('id');
+            $('.-active').removeClass('-active');
 
-        $(this).addClass('-active')
+            $(this).addClass('-active')
 
-        $(tubHref).addClass('-active');
+            $(tubID).addClass('-active');
 
-        console.log(tubHref);
+            return false;
+        } else if (
+            type == 'click'
+        ) {
+            $('.circle__wrapper.-active .circle__border-mask').addClass('-animated');
+        }
 
-        return false;
     }
 
-    $('a.pages-slider__tub').hover(openTubs);
+
+    $('a.pages-slider__tub').on('mouseover', { type: 'hover' }, openTubs);
+
+    // 3.1.CHANGE SLIDES END (HOVER)
+
+    // 3.2.CHANGE PAGE START (CLICK)
+
+    $('a.pages-slider__tub').on(clickEventType, { type: 'click' }, openTubs);
+
+    // 3.2.CHANGE PAGE END
 
     // 3.PAGES SLIDER END
+
+    // 4.ANIMATION FOR HOME PAGE START
+
+    const animItems = document.querySelectorAll('.lazyload');
+
+    if (animItems.length > 0) {
+
+        window.addEventListener('scroll', animOnScroll);
+
+        function animOnScroll() {
+            for (let index = 0; index < animItems.length; index++) {
+                const animItem = animItems[index];
+                const animItemHeight = animItem.offsetHeight;
+                const animItemOffset = offset(animItem).top;
+                const animStart = 4;
+
+                let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+                if (
+                    animItemHeight > window.innerHeight
+                ) {
+                    animItemPoint = window.innerHeight / animStart;
+                }
+
+                if (
+                    (pageYOffset > animItemOffset - animItemPoint) &&
+                    pageYOffset < (animItemOffset + animItemHeight)
+                ) {
+                    animItem.classList.add('-visible');
+                } else {
+                    animItem.classList.remove('-visible')
+                }
+            }
+        }
+
+        setTimeout(() => {
+            animOnScroll();
+        }, 300);
+
+
+    }
+
+    // 4.ANIMATION FOR HOME PAGE END
+
+    // 5.CROSS-BROWSER ELEM POSITION START
+
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+
+    // 5.CROSS-BROWSER ELEM POSITION END
 
 });
