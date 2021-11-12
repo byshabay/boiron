@@ -1,123 +1,106 @@
 <!-- 1.HEADER START -->
-<?php include('inc/header.php') ?>
+<div class="home">
+    <?php include('inc/header.php') ?>
+</div>
+
 <!-- 1.HEADER END -->
 
 <!-- 2.MAIN START -->
 
 <main class="main">
-    <!-- 2.1.BANNER START -->
 
-    <section class="common-banner product-banner container">
-        <a href="<?= $ROOT_URL ?>" class="back-btn">
-            <img src="<?= $ROOT_URL . 'images/back-arrow.svg' ?>">
-        </a>
-        <h1 class="common-h1">
-            наши продукты
-        </h1>
-    </section>
+    <!-- 2.1.PAGES SLIDER START -->
 
-    <!-- 2.1.BANNER END -->
-
-    <!-- 2.2.BREADCRUMB START -->
-
-    <section class="breadcrumb">
-        <ul class="container">
-            <li>
-                <a href="<?= $ROOT_URL ?>">
-                    Лаборатория Буарон
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    Наши продукты
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <!-- 2.2.BREADCRUMB END -->
-
-    <!-- 2.3.PRODUCT LIST START -->
-
-    <section class="product-list container">
-        <div class="common-h2">
-            Продукты Boiron, которые способствуют благополучию и здоровью, эффективно и без риска.
+    <section class="pages-slider">
+        <div class="pages-slider__logo container">
+            <img src="<?= $ROOT_URL . 'images/logo.png' ?>">
         </div>
 
-        <ul class="product-list__ul">
-            <li>
-                <a href="#">
-                    <div class="product-list__img">
-                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
-                    </div>
-                    <div class="common-h3">
-                        Монопрепараты
-                    </div>
-                    <p class="common-p">
-                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
-                    </p>
-                </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
-                    Узнать больше
-                </a>
-            </li>
+        <div class="pages-slider__wrapper container">
 
-            <li>
-                <a href="#">
-                    <div class="product-list__img">
-                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
-                    </div>
-                    <div class="common-h3">
-                        Монопрепараты
-                    </div>
-                    <p class="common-p">
-                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
-                    </p>
-                </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
-                    Узнать больше
-                </a>
-            </li>
+            <!-- TUBS START -->
 
-            <li>
-                <a href="#">
-                    <div class="product-list__img">
-                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
-                    </div>
-                    <div class="common-h3">
-                        Монопрепараты
-                    </div>
-                    <p class="common-p">
-                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
-                    </p>
+            <div class="pages-slider__tubs">
+                <a class=" pages-slider__tub " href="#pages-slider__1">
+                    ПРИВЕТСТВИЕ ОТ ВАЛЕРИ
+                    <br>ПУАНСО
                 </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
 
-                    Узнать больше
+                <a class="pages-slider__tub" href="#pages-slider__2">
+                    ЛАБОРАТОРИЯ БУАРОН
                 </a>
-            </li>
+                <a class="pages-slider__tub" href="#pages-slider__3">
+                    ЛЕЧение БЕЗ ВРЕДА
+                </a>
+                <a class="pages-slider__tub -active" href="#pages-slider__4">
+                    НАШИ ПРОДУКТЫ
+                </a>
+                <a class="pages-slider__tub" href="#pages-slider__5">
+                    МОЕ <br> ЕЖЕДНЕВНОЕ ЗДОРОВЬЕ
+                </a>
+            </div>
 
-            <li>
-                <a href="#">
-                    <div class="product-list__img">
-                        <img src="<?= $ROOT_URL . 'images/product-list.png' ?>">
+            <!-- TUBS END -->
+
+            <!-- SLIDER CONTENT START -->
+
+            <div class="pages-slider__content">
+                <div id="pages-slider__1" class="pages-slider__content-slide ">
+                    1
+                </div>
+                <div id="pages-slider__2" class="pages-slider__content-slide ">
+                    2
+                </div>
+                <div id="pages-slider__3" class="pages-slider__content-slide ">
+                    3
+                </div>
+                <div id="pages-slider__4" class="pages-slider__content-slide -active">
+                    <div class="pages-slider__h1">
+                        НАШЕ ВИДЕНИЕ ЗДОРОВЬЯ
                     </div>
-                    <div class="common-h3">
-                        Монопрепараты
-                    </div>
-                    <p class="common-p">
-                        Гомеопатические препараты с общим названием (HNC) не имеют терапевтических показаний для индивидуального подхода к уходу за каждым пациентом.
+                    <p class="pages-slider__p">
+                        «Осознавая, что пациенты во всем мире ищут безопасное лечение, мы делаем безопасные и качественные лекарства доступными для всех благодаря нашему уникальному опыту в гомеопатии».
+                        <br>
+                        Валери Лоренц-Пуансо, управляющий директор
                     </p>
-                </a>
-                <a href="#" class="common-mini-p product-list__mini-p common-rigth-arrow">
-                    Узнать больше
-                </a>
-            </li>
-        </ul>
+                    <a href="<?= $ROOT_URL . 'templates/product.php' ?>" class="common-white-btn">
+                        Страница продуктов
+                    </a>
+                </div>
+
+                <div id="pages-slider__5" class="pages-slider__content-slide ">
+                    5
+                </div>
+            </div>
+
+            <!-- SLIDER CONTENT END -->
+
+            <!-- CIRCLE START -->
+
+            <div class="circle__wrapper pages-slider__4">
+                <div class="circle__bkg">
+                    <div>
+
+                    </div>
+                </div>
+                <div class="circle__border-mask">
+
+                </div>
+                <div class="circle__mask">
+
+                </div>
+            </div>
+
+            <!-- CIRCLE END -->
+
+
+
+        </div>
     </section>
 
-    <!-- 2.3.PRODUCT LIST END -->
+
+    <!-- 2.1.PAGES SLIDER END -->
+
 </main>
 
 <!-- 2.MAIN END -->

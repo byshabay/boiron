@@ -97,4 +97,31 @@ $(document).ready(function () {
 
     // 2.MOBILE MENU APPEARANCE END
 
+    // 3.PAGES SLIDER START
+
+    /**
+     * Приведенный ниже код изменить для классов с помощью  slice(1)
+     */
+
+    function openTubs(e) {
+        e.preventDefault();
+
+        let tubHref = $(this).attr('href');
+        $('.-active').removeClass('-active');
+
+        $(this).addClass('-active')
+
+        $(tubHref).addClass('-active');
+
+
+
+        console.log(tubHref.slice(1))
+
+        return false;
+    }
+
+    $('a.pages-slider__tub').hover(openTubs);
+
+    // 3.PAGES SLIDER END
+
 });
