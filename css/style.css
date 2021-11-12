@@ -472,7 +472,6 @@ HOME PAGE STYLES START
 .pages-slider__tub.-active {
     font-family: var(--bold);
 
-    color: #496e85;
 }
 
 .pages-slider__tubs {
@@ -494,11 +493,10 @@ HOME PAGE STYLES START
     padding-right: 10%;
 
     background-color: red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-}
-
-.pages-slider__content-slide:nth-child(4).-active {
-    background: url('../images/slide-4.jpg') center/cover no-repeat;
 }
 
 .pages-slider__content-slide::after {
@@ -557,11 +555,16 @@ HOME PAGE STYLES START
 
 .circle__wrapper {
     position: absolute;
+    display: none;
     top: 0;
     left: 0;
     width: 100%;
     max-width: var(--max-width);
     height: 810px;
+}
+
+.circle__wrapper.-active {
+    display: block;
 }
 
 /* 
@@ -580,7 +583,7 @@ HOME PAGE STYLES START
     overflow: hidden;
 
     border-radius: 50%;
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #fff;
@@ -595,21 +598,6 @@ HOME PAGE STYLES START
     top: 50%;
     transform: translate(-50%, -50%);
     
-}
-
-.pages-slider__4 .circle__bkg div {
-    background-image: url('../images/product-bkg.png.png');
-}
-
-
-.pages-slider__4 .circle__mask {
-    background-image: url('../images/slide-4-mask.png');
-    background-size: 15% 30%;
-    background-position: 52.9412% 14.2857% ;
-}
-
-.pages-slider__4 .circle__border-mask {
-    background-image: url('../images/circle-blue.png');
 }
 
 .circle__mask {
@@ -636,6 +624,54 @@ HOME PAGE STYLES START
 
 /* 1.1.CIRCLE END */
 
+
+/* FIRST */
+
+.pages-slider__tub:nth-child(1).-active {
+    color: #A1CAD7;
+}
+
+/* SECOND */
+
+.pages-slider__tub:nth-child(2).-active {
+    color: #6b759a;
+}
+
+/* THIRD */
+
+.pages-slider__tub:nth-child(3).-active {
+    color: #bc4827;
+}
+
+/* FOURTH */
+
+.pages-slider__4 .circle__bkg div {
+    background-image: url('../images/product-bkg.png.png');
+}
+
+.pages-slider__4 .circle__mask {
+    background-image: url('../images/slide-4-mask.png');
+    background-size: 15% 30%;
+    background-position: 52.9412% 14.2857% ;
+}
+
+.pages-slider__4 .circle__border-mask {
+    background-image: url('../images/circle-blue.png');
+}
+
+.pages-slider__content .pages-slider__4.-active {
+    background-image: url('../images/slide-4.jpg');
+}
+
+.pages-slider__tub:nth-child(4).-active {
+    color: #496e85;
+}
+
+/* FIFTH */
+
+.pages-slider__tub:nth-child(5).-active {
+    color: #93b04a;
+}
 
 /* 1.PAGES SLIDER END */
 

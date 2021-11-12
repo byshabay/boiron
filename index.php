@@ -45,16 +45,16 @@
             <!-- SLIDER CONTENT START -->
 
             <div class="pages-slider__content">
-                <div id="pages-slider__1" class="pages-slider__content-slide ">
+                <div id="pages-slider__1" class="pages-slider__content-slide pages-slider__1">
                     1
                 </div>
-                <div id="pages-slider__2" class="pages-slider__content-slide ">
+                <div id="pages-slider__2" class="pages-slider__content-slide pages-slider__2">
                     2
                 </div>
-                <div id="pages-slider__3" class="pages-slider__content-slide ">
+                <div id="pages-slider__3" class="pages-slider__content-slide pages-slider__3">
                     3
                 </div>
-                <div id="pages-slider__4" class="pages-slider__content-slide -active">
+                <div id="pages-slider__4" class="pages-slider__content-slide pages-slider__4 -active">
                     <div class="pages-slider__h1">
                         НАШЕ ВИДЕНИЕ ЗДОРОВЬЯ
                     </div>
@@ -68,7 +68,7 @@
                     </a>
                 </div>
 
-                <div id="pages-slider__5" class="pages-slider__content-slide ">
+                <div id="pages-slider__5" class="pages-slider__content-slide pages-slider__5">
                     5
                 </div>
             </div>
@@ -77,7 +77,7 @@
 
             <!-- CIRCLE START -->
 
-            <div class="circle__wrapper pages-slider__4">
+            <div class="circle__wrapper pages-slider__4 -active">
                 <div class="circle__bkg">
                     <div>
 

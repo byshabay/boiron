@@ -106,16 +106,14 @@ $(document).ready(function () {
     function openTubs(e) {
         e.preventDefault();
 
-        let tubHref = $(this).attr('href');
+        let tubHref = '.' + $(this).attr('href').slice(1);
         $('.-active').removeClass('-active');
 
         $(this).addClass('-active')
 
         $(tubHref).addClass('-active');
 
-
-
-        console.log(tubHref.slice(1))
+        console.log(tubHref);
 
         return false;
     }
