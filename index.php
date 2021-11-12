@@ -45,16 +45,46 @@
             <!-- SLIDER CONTENT START -->
 
             <div class="pages-slider__content">
-                <div id="pages-slider__1" class="pages-slider__content-slide pages-slider__1">
-                    1
+                <div class="pages-slider__content-slide pages-slider__1">
+                    <div class="pages-slider__h1">
+                        НАШЕ ВИДЕНИЕ ЗДОРОВЬЯ
+                    </div>
+                    <p class="pages-slider__p">
+                        «Осознавая, что пациенты во всем мире ищут безопасное лечение, мы делаем безопасные и качественные лекарства доступными для всех благодаря нашему уникальному опыту в гомеопатии».
+                        <br>
+                        Валери Лоренц-Пуансо, управляющий директор
+                    </p>
+                    <a href="#" class="common-white-btn">
+                        Вступительное слово от Валери
+                    </a>
                 </div>
-                <div id="pages-slider__2" class="pages-slider__content-slide pages-slider__2">
-                    2
+                <div class="pages-slider__content-slide pages-slider__2">
+                    <div class="pages-slider__h1">
+                        ЛАБОРАТОРИЯ БУАРОН
+                    </div>
+                    <p class="pages-slider__p">
+                        «Осознавая, что пациенты во всем мире ищут безопасное лечение, мы делаем безопасные и качественные лекарства доступными для всех благодаря нашему уникальному опыту в гомеопатии».
+                        <br>
+                        Валери Лоренц-Пуансо, управляющий директор
+                    </p>
+                    <a href="#" class="common-white-btn">
+                        Страница лаборатории
+                    </a>
                 </div>
-                <div id="pages-slider__3" class="pages-slider__content-slide pages-slider__3">
-                    3
+                <div class="pages-slider__content-slide pages-slider__3">
+                    <div class="pages-slider__h1">
+                        ЛЕЧение БЕЗ ВРЕДА
+                    </div>
+                    <p class="pages-slider__p">
+                        «Осознавая, что пациенты во всем мире ищут безопасное лечение, мы делаем безопасные и качественные лекарства доступными для всех благодаря нашему уникальному опыту в гомеопатии».
+                        <br>
+                        Валери Лоренц-Пуансо, управляющий директор
+                    </p>
+                    <a href="#" class="common-white-btn">
+                        Страница
+                    </a>
                 </div>
-                <div id="pages-slider__4" class="pages-slider__content-slide pages-slider__4 -active">
+                <div class="pages-slider__content-slide pages-slider__4 -active">
                     <div class="pages-slider__h1">
                         НАШЕ ВИДЕНИЕ ЗДОРОВЬЯ
                     </div>
@@ -68,14 +98,67 @@
                     </a>
                 </div>
 
-                <div id="pages-slider__5" class="pages-slider__content-slide pages-slider__5">
-                    5
+                <div class="pages-slider__content-slide pages-slider__5">
+                    <div class="pages-slider__h1">
+                        Мое ЕЖЕДНЕВНОЕ ЗДОРОВЬЕ
+                    </div>
+                    <p class="pages-slider__p">
+                        «Осознавая, что пациенты во всем мире ищут безопасное лечение, мы делаем безопасные и качественные лекарства доступными для всех благодаря нашему уникальному опыту в гомеопатии».
+                        <br>
+                        Валери Лоренц-Пуансо, управляющий директор
+                    </p>
+                    <a href="<?= $ROOT_URL . 'templates/product.php' ?>" class="common-white-btn">
+                        Страница здоровья
+                    </a>
                 </div>
             </div>
 
             <!-- SLIDER CONTENT END -->
 
             <!-- CIRCLE START -->
+
+            <div class="circle__wrapper pages-slider__1">
+                <div class="circle__bkg">
+                    <div>
+
+                    </div>
+                </div>
+                <div class="circle__border-mask">
+
+                </div>
+            </div>
+
+            <div class="circle__wrapper pages-slider__2 ">
+                <div class="circle__bkg">
+                    <div>
+
+                    </div>
+                </div>
+                <div class="circle__border-mask">
+
+                </div>
+                <div class="circle__mask-wrapper">
+                    <div class="circle__mask">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle__wrapper pages-slider__3">
+                <div class="circle__bkg">
+                    <div>
+
+                    </div>
+                </div>
+                <div class="circle__border-mask">
+
+                </div>
+                <div class="circle__mask-wrapper">
+                    <div class="circle__mask">
+
+                    </div>
+                </div>
+            </div>
 
             <div class="circle__wrapper pages-slider__4 -active">
                 <div class="circle__bkg">
@@ -86,8 +169,26 @@
                 <div class="circle__border-mask">
 
                 </div>
-                <div class="circle__mask">
+                <div class="circle__mask-wrapper">
+                    <div class="circle__mask">
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle__wrapper pages-slider__5">
+                <div class="circle__bkg">
+                    <div>
+
+                    </div>
+                </div>
+                <div class="circle__border-mask">
+
+                </div>
+                <div class="circle__mask-wrapper">
+                    <div class="circle__mask">
+
+                    </div>
                 </div>
             </div>
 
