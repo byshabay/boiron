@@ -195,4 +195,24 @@ $(document).ready(function () {
 
     // 5.CROSS-BROWSER ELEM POSITION END
 
+    // 6.YOUTUBE POPUP START 
+
+    $('.playBtn').on(clickEventType, function (e) {
+        $('.lazyload__youtube-video').addClass('-visible');
+        $('#widget2').attr('src', 'https://www.youtube.com/embed/2U04hSgXXpY?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.boiron.fr&amp;widgetid=1');
+    });
+
+
+    $('.lazyload__youtube-video').on(clickEventType, function (e) {
+        console.log("yes");
+        if (
+            $('.lazyload__youtube-container').has(e.target).length === 0
+        ) {
+            $('.lazyload__youtube-video').removeClass('-visible');
+            $('#widget2').attr('src', ' ');
+        }
+    })
+
+    // 6.YOUTUBE POPUP END
+
 });

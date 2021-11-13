@@ -790,12 +790,18 @@ HOME PAGE STYLES START
 
 /* 2.LAZY LOAD WRAPPER START */
 
-.lazyload.container {
+.lazyload__product {
     position: relative;
     margin-top: 95px;
 }
 
-.lazyload img{
+@media (max-width: 1025px) { 
+    .lazyload__product {
+        margin-top: 65px;
+    }
+}
+
+.lazyload__product img{
     width: 100%;
     height: auto;
     display: block;
@@ -806,7 +812,13 @@ HOME PAGE STYLES START
     opacity: 0;
 }
 
-.lazyload.-visible img,
+@media (max-width: 1100px) {
+    .lazyload__product img {
+        height: 450px;
+    }
+}
+
+.lazyload__product.-visible img,
 .lazyload.-visible .lazyload__info-box,
 .lazyload.-visible .lazyload__h2,
 .lazyload.-visible p,
@@ -828,6 +840,15 @@ HOME PAGE STYLES START
     opacity: 0;
 }
 
+@media (max-width: 1100px) {
+    .lazyload__info-box {
+        width: 100%;
+        bottom: -70px;
+        padding: 23px 20px;
+    }
+
+}
+
 .lazyload__h2 {
     z-index: 1;
     position: relative;
@@ -840,6 +861,12 @@ HOME PAGE STYLES START
     transform: translateY(30px);
     color: #fff;
     opacity: 0;
+}
+
+@media (max-width: 1100px) {
+    .lazyload__h2 {
+        font-size: 23px;
+    }
 }
 
 .lazyload p {
@@ -858,6 +885,18 @@ HOME PAGE STYLES START
     opacity: 0;
 }
 
+@media (max-width: 1100px) {
+    .lazyload p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .lazyload p { 
+        font-size: 18px;
+    }
+}
+
 .lazyload__btn {
     margin-top: 0;
     z-index: 1;
@@ -874,9 +913,184 @@ HOME PAGE STYLES START
     opacity: 0;
 }
 
+@media (max-width: 1025px) {
+    .lazyload__btn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lazyload__btn { 
+        display: block;
+        font-size: 16px;
+    }
+}
 
 /* 2.LAZY LOAD WRAPPER END */
 
+/* 3.VIDEO START */
+
+.background {
+    height: 150px;
+    width: 100%;
+
+    background-color: var(--colored-4);
+}
+
+@media (max-width: 1200px) {
+    .background  {
+        height: 60px;
+    }
+}
+
+.lazyload__video-block {
+    margin-top: 150px;
+    position: relative;
+}
+
+@media (max-width: 1025px) {  
+    .lazyload__video-block {
+        margin-top: 110px;
+    }
+}
+
+.lazyload__video {
+    height: 580px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 1025px) {
+    .lazyload__video {
+        height: 300px;
+    }
+}
+
+.lazyload__video video {
+    position: absolute;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+.lazyload__video .playBtn {
+    width: 90px;
+    height: 90px;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1025px) {
+    .lazyload__video .playBtn {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.lazyload__text,
+.lazyload__text div {
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.lazyload__text {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 20;
+    width: calc(80% + 50vw - 50%);
+
+    color: #fff;
+    line-height: 1;
+}
+
+.lazyload__text div {
+    padding-left: 80px;
+}
+
+@media (max-width: 1200px) { 
+    .lazyload__text {
+        top: 15px;
+        height: 15px;
+
+        font-size: 25px;
+    }
+
+    .lazyload__text div {
+        padding-left: 20px;
+
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lazyload__text,
+    .lazyload__text div {
+        font-size: 16px;
+    }
+}
+
+
+/* 3.1.YOUTUBE POPUP START */ 
+
+.lazyload__youtube-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -10;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all .2s linear;
+    opacity: 0;
+}
+
+.lazyload__youtube-video.-visible {
+    opacity: 1;
+    z-index: 1000000000000000000;
+}
+
+.lazyload__youtube-container {
+    position: relative;
+    width: 90%;
+    max-width: 953px;
+}
+
+.lazyload__youtube-container > div {
+    padding-bottom: 56.25%;
+}
+
+.lazyload__youtube-container > div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1025px) {
+
+}
+
+/* 3.1.YOUTUBE POPUP END */
+
+/* 3.VIDEO END */
 
 /* 2.HOME PAGE MEDIA START */
 
@@ -936,32 +1150,7 @@ HOME PAGE STYLES START
     .circle__border-mask.-animated {
         background-size: 230% auto;
     }
-
-    .lazyload.container {
-        margin-top: 65px;
-    }
-
-    .lazyload img {
-        height: 450px;
-    }
-
-    .lazyload__info-box {
-        width: 100%;
-        bottom: -70px;
-        padding: 23px 20px;
-    }
-
-    .lazyload__h2 {
-        font-size: 23px;
-    }
-
-    .lazyload p {
-        font-size: 25px;
-    }
-
-    .lazyload__btn {
-        font-size: 18px;
-    }
+    
 }
 
 /* 2.HOME PAGE MEDIA END */

@@ -204,25 +204,60 @@
 
     <!-- 2.2.LAZY LOAD WRAPPER START -->
 
-    <section class="lazyload container">
-        <img src="<?= $ROOT_URL . 'images/lazyload.jpg' ?>">
-        <div class="lazyload__info-box">
-            <a href="#">
-                <div class="lazyload__h2">
-                    наши продукты
-                </div>
-                <p class="lazyload__p">
-                    Продукты компании Буарон оказывают бережное и эффективное влияние на ваше здоровье.
-                </p>
-                <span class="lazyload__btn">
-                    Откройте для себя нашу продукцию
-                </span>
-            </a>
+    <section class="container">
+        <div class="lazyload lazyload__product">
+            <img src="<?= $ROOT_URL . 'images/lazyload.jpg' ?>">
+            <div class="lazyload__info-box">
+                <a href="#">
+                    <div class="lazyload__h2">
+                        наши продукты
+                    </div>
+                    <p class="lazyload__p">
+                        Продукты компании Буарон оказывают бережное и эффективное влияние на ваше здоровье.
+                    </p>
+                    <span class="lazyload__btn">
+                        Откройте для себя нашу продукцию
+                    </span>
+                </a>
+            </div>
         </div>
+    </section>
+
+
+    <!-- 2.2.LAZY LOAD WRAPPER END -->
+
+    <!-- 2.3.VIDEO START -->
+
+    <section class="lazyload container lazyload__video-block">
+        <div class="background">
+
+        </div>
+        <div class="lazyload__video">
+            <video preload="auto" autoplay loop playsinline muted>
+                <source src="https://cms.boiron.fr/sites/default/files/videos/2020-09/boiron_1.mp4">
+            </video>
+            <img class="playBtn" src="<?= $ROOT_URL . 'images/play.svg' ?>">
+        </div>
+        <div class="lazyload__text">
+            ОСОБОЕ ВНИМАНИЕ К
+            <div> ВАШЕМУ ЗДОРОВЬЮ!</div>
+        </div>
+
+        <!-- 2.3.1.YOTUBE START -->
+
+        <div class="lazyload__youtube-video">
+            <div class="lazyload__youtube-container">
+                <div>
+                    <iframe id="widget2" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="" data-gtm-yt-inspected-31932142_69="true"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2.3.1.YOTUBE END -->
 
     </section>
 
-    <!-- 2.2.LAZY LOAD WRAPPER END -->
+    <!-- 2.3.VIDEO END -->
 
 </main>
 
