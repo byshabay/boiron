@@ -259,6 +259,40 @@
 
     <!-- 2.3.VIDEO END -->
 
+    <!-- 2.4.PERSONAL APPROACHE BLOCK START -->
+
+    <section class="approache lazyload container">
+
+        <div class="approache__left-column ">
+            <div class="approache__h3">
+                Персонализированный подход к вашему здоровью
+            </div>
+
+            <p class="approache__p">
+                Уважение к своему здоровью - это, прежде всего, уважение к себе как к личности, которой являетесь, и к тому выбору, который вы делаете. Гомеопатия - сочетание альтернативной медицины и традиционных методов лечения.
+
+            </p>
+            <a href="#" class="approache__btn common-border-btn">
+                Откройте для себя наше видение здоровья
+            </a>
+
+        </div>
+
+        <div class="approache__right-column">
+            <div>
+                <img class="approache__img" src="<?= $ROOT_URL . 'images/approche.png' ?>">
+
+                <img class="approache__mask approache__mask_left" src="<?= $ROOT_URL . 'images/mask-white-left.png' ?>">
+
+                <img class="approache__mask approache__mask_bottom" src="<?= $ROOT_URL . 'images/mask-white-bottom.png' ?>">
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 2.4.PERSONAL APPROACHE BLOCK END -->
+
 </main>
 
 <!-- 2.MAIN END -->
